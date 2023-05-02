@@ -122,11 +122,13 @@ Coloque a aplicação Python Flask no servidor (diretório [`python-app`](python
    * Interrupção e início de VM com nome `minha-vm-1`: `gcloud compute instances start minha-vm-1` (utilize `stop` no lugar de `start` para parar a instância)
    * Iniciar terminal SSH com a VM com nome `minha-vm-1`: `gcloud compute ssh minha-vm-1`
 
+   <!--
 #### Google Cloud Run - PaaS
 
 https://github.com/GoogleCloudPlatform/python-docs-samples/tree/7d13ba8da63d1ff70ac25b77de529c6587f8f141/run
 
 exemplo de serviço web python simples
 https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service?hl=pt-br
+-->
 
 
