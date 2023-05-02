@@ -73,7 +73,7 @@ Execute um servidor web em uma máquina virtualizada e acesse pelo seu browser.
 
 Instale o módulo Flask no Python com o comando:
 
-        sudo apt install python-pip
+        sudo apt install python3-pip
         pip3 install flask
 
 Coloque a aplicação Python Flask no servidor (diretório [`python-app`](python-app)) e acesse-a do seu browser.
@@ -81,7 +81,7 @@ Coloque a aplicação Python Flask no servidor (diretório [`python-app`](python
         python3 appteste.py
 
 ### Parte 2: Google Cloud Platform
-ls in
+
 #### Google Cloud Platform
 
 1. Entre no console do Google Cloud em <https://console.cloud.google.com/>
@@ -122,4 +122,11 @@ ls in
    * Interrupção e início de VM com nome `minha-vm-1`: `gcloud compute instances start minha-vm-1` (utilize `stop` no lugar de `start` para parar a instância)
    * Iniciar terminal SSH com a VM com nome `minha-vm-1`: `gcloud compute ssh minha-vm-1`
 
-Google Cloud Run - PaaS
+#### Google Cloud Run - PaaS
+
+https://github.com/GoogleCloudPlatform/python-docs-samples/tree/7d13ba8da63d1ff70ac25b77de529c6587f8f141/run
+
+exemplo de serviço web python simples
+https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service?hl=pt-br
+
+
