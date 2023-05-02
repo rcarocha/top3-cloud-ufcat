@@ -48,7 +48,7 @@ As atividades aqui descritas não serão um passo-a-passo ou servirão como docu
 
 Exceto quando estivermos utilizando o console do Google Cloud, as atividades serão realizadas no terminal de comandos no Linux.
 
-Este documento, scripts e códigos mencionados neste documento estão disponíveis no projeto GitHub em <https://github.com/rcarocha/top3-cloud>. Quando for necessário utilizar algum dos códigos mencionados, copie esse projeto para o seu ambiene, utilizando o comando git:
+Este documento, scripts e códigos mencionados neste documento estão disponíveis no projeto GitHub em <https://github.com/rcarocha/top3-cloud-ufcat>. Quando for necessário utilizar algum dos códigos mencionados, copie esse projeto para o seu ambiene, utilizando o comando git:
 
     git clone https://github.com/rcarocha/top3-cloud-ufcat
 
