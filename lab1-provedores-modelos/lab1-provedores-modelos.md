@@ -113,7 +113,9 @@ Coloque a aplicação Python Flask no servidor (diretório [`python-app`](python
 
    * Uma vez autenticado, o `gcloud` não solicitará mais a autenticação para acessar o seu projeto no Google Cloud. Se você estiver usando uma máquina que não seja pessoal, outro aluno que acessar a sua VM terá acesso ao Google Cloud pela sua conta. Portanto, ao final do laboratório limpe as suas credenciais no `gcloud` usando o comando
 
-        gcloud auth revoke nome-do-seu-usuario
+     ```
+     gcloud auth revoke nome-do-seu-usuario
+     ```
 
    A lista de usuários registrados no `gcloud` pode ser obtida com o comando
 
