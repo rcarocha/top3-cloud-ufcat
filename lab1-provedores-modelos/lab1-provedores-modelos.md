@@ -128,13 +128,47 @@ Coloque a aplicação Python Flask no servidor (diretório [`python-app`](python
    * Interrupção e início de VM com nome `minha-vm-1`: `gcloud compute instances start minha-vm-1` (utilize `stop` no lugar de `start` para parar a instância)
    * Iniciar terminal SSH com a VM com nome `minha-vm-1`: `gcloud compute ssh minha-vm-1`
 
-   <!--
+
 #### Google Cloud Run - PaaS
 
-https://github.com/GoogleCloudPlatform/python-docs-samples/tree/7d13ba8da63d1ff70ac25b77de529c6587f8f141/run
+Nós instalaremos a aplicação de exemplo Python na Google Cloud na usando um serviço PaaS chamado **Cloud Run**.
 
-exemplo de serviço web python simples
-https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service?hl=pt-br
+O exemplo de serviço web python aproveita o exemplo de aplicação teste disponível em: <https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service?hl=pt-br>.
+
+No Cloud Run, a aplicação é mantida em um **container**, pode ser desenvolvida em qualquer linguagem e a implantação possui as seguintes características:
+
+* Todo o gerenciamento da infraestrutura fica a cargo da Google Cloud.
+* Novas instâncias da aplicação são criadas na Google Cloud de acordo com a quantidade de tráfego e sob demanda.
+* A cobrança é feita:
+  1. Por número de acessos efetivamente recebidos.
+  2. Por [região do Google Cloud Run](https://cloud.google.com/run/docs/locations?hl=pt_BR). Procure usar `us-central1` nos testes.
+
+Cloud Run não é a única plataforma de PaaS da Google, mas as outras são específicas de linguagem e podem ser mais vantajosas dependendo do tráfego aplicado e outras características.
+
+O projeto de exemplo do Google Cloud Run está no projeto github de referência, no diretório `top3-cloud-ufcat/lab1-provedores-modelos/paas-cloud-run`. Baixa uma cópia do projeto usando
+
+```
+git clone https://github.com/rcarocha/top3-cloud-ufcat.git
+```
+
+ou atualize o seu projeto baixado na outra aula (há algumas alterações) com
+
+```
+git pull
+```
+
+No diretório `top3-cloud-ufcat/lab1-provedores-modelos/paas-cloud-run`, o projeto pode ser implantado na nuvem usando o comando `gcloud`:
+
+```
+gcloud run deploy
+```
+
+
+
+<!--
+https://github.com/GoogleCloudPlatform/python-docs-samples/tree/7d13ba8da63d1ff70ac25b77de529c6587f8f141/run
 -->
+
+
 
 
