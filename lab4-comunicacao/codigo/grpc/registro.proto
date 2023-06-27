@@ -1,0 +1,17 @@
+// $ python3 -m grpc_tools.protoc -I. --python_out=. --pyi_out=. --grpc_python_out=. registro.proto
+
+syntax = "proto2";
+
+service Registro {
+  rpc RegistreAtividade (AtividadeAluno) returns (RespostaRegistro) {}
+}
+
+
+message AtividadeAluno {
+  required string aluno = 1;
+  required string mesg = 2;
+}
+
+message RespostaRegistro {
+  required string hashBase64 = 1;
+}
