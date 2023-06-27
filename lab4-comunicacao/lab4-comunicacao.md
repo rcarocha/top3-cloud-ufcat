@@ -49,37 +49,7 @@ Nesses exemplos, estamos inspecionando mensagens que chegam destinadas à porta 
 
 ### Código de Referência
 
-
-
-###  OpenStack
-
-* Arquitetura: <https://ubuntu.com/openstack/what-is-openstack>
-* Documento de instalação: <https://ubuntu.com/openstack/install>
-* Requisitos mínimos: 8Gb de RAM e 100Gb de disco. Utilizaremos 16 Gb de RAM e 200 Gb de disco.
-200 G
-
-### Instalação
-
-    sudo snap install microstack --beta
-
-
-### Inicialização do OpenStack
-
-    sudo microstack init --auto --control
-
-A iniciação demora aproximadamente 10min.
-
-### Listar Imagens Disponíveis
-
-    microstack.openstack image list
-
-### Atributos ("Sabores") Disponíveis para VMs
-
-    microstack.openstack flavor list
-
-### Obter a senha do administrator do OpenStack
-
-Acesse a interface web do adminstrador OpenStack pelo IP público da sua VM. Usuário administrador do OpenStack é `admin` e a senah deve ser obtida na estação executando o comando abaixo a partir de um terminal:
-
-    sudo snap get microstack config.credentials.keystone-password
+* [`codigo/`](codigo/) - Versão Local
+* [`codigo/grpc/`](codigo/grpc/) - Comunicação via gRPC/python
+* [`codigo/xmlrpc/`](codigo/xmlrpc/) - Comunicação via xmlrpc/python
 
