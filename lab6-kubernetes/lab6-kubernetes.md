@@ -263,7 +263,7 @@ https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 
 * Escalar uma aplicação para utilizar quatro réplicas
 
-                kubectl scale deployments/kubernetes-bootcamp --replicas=4
+        kubectl scale deployments/kubernetes-bootcamp --replicas=4
 
 <!--
 
