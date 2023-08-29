@@ -265,7 +265,7 @@ https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 
                 kubectl scale deployments/kubernetes-bootcamp --replicas=4
 
-                <!--
+<!--
 
 Componentes
 
